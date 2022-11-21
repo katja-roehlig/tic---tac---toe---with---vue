@@ -10,15 +10,20 @@
 </head>
 <body>
     <div id="app">
-        <input type="text" size="1" id="area-a"> 
-        <input type="text" size="1" id="area-b">
-        <input type="text" size="1" id="area-c">
-        <input type="text" size="1" id="area-e">
-        <input type="text" size="1" id="area-f">
-        <input type="text" size="1" id="area-g">
-        <input type="text" size="1" id="area-h">
-        <input type="text" size="1" id="area-i">
-        <input type="text" size="1" id="area-j">
+        <h1>Tic Tac Toe</h1>
+    <form class="form-container" @click="compareAreas"> 
+        <input type="text" size="1" id="area-a" v-model="a"> 
+        <input type="text" size="1" id="area-b"v-model="b">
+        <input type="text" size="1" id="area-c"v-model="c">
+        <input type="text" size="1" id="area-e"v-model="d">
+        <input type="text" size="1" id="area-f"v-model="e">
+        <input type="text" size="1" id="area-g"v-model="f">
+        <input type="text" size="1" id="area-h"v-model="g">
+        <input type="text" size="1" id="area-i"v-model="h">
+        <input type="text" size="1" id="area-j"v-model="i">
+</form>
+<p v-if="winner">Du hast gewonnen🥳!</p>
+       
     </div>
     <script src="script.js"></script>
 </body>

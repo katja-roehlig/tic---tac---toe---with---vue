@@ -1,1 +1,13 @@
 * {box-sizing: border-box;}
+
+input{
+    text-align: center;
+    font-size: 2em;
+}
+
+.form-container{
+    width: 50vmin;
+    height: 50vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
